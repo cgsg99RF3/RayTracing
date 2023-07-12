@@ -205,7 +205,7 @@ namespace rirt
       checker A;
       shade_info si {I->P, I->N, I->Shp, I->Shp->Surf, Media, {1, 0, 0}, {0, 1, 0}};
      // for (auto m: si.Shp->Mode)
-        A.Apply(&si);
+        //A.Apply(&si);
       mth::vec3<DBL> color = si.Surf.Ka * AmbientColor * mth::vec3<DBL>(0);
       mth::vec3<DBL> R = V - si.N * (2 * (V & si.N));
       for (auto Lgh : Lights)

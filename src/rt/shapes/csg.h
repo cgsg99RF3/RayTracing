@@ -56,7 +56,7 @@ namespace rirt
     */
     BOOL Intersect( const mth::ray<DBL> &r, intr *I ) override 
     {
-      return Cut (r, I);
+      return Intr(r, I);
     } /* End of 'Intersect' finction */
 
     /* Intersection function
